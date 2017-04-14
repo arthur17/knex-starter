@@ -1,0 +1,26 @@
+{
+  "name": "knex-starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "migrate": "bash ./knex.sh migrate:latest",
+    "rollback": "bash ./knex.sh migrate:rollback",
+    "seed": "bash ./knex.sh seed:run",
+    "reset": "npm run rollback && npm run migrate",
+    "reload": "npm run reset && npm run seed"
+  },
+  "author": "arthur17",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "faker": "^4.1.0",
+    "knex": "^0.12.9",
+    "pg": "^6.1.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^1.0.0",
+    "@types/bluebird": "^3.5.2",
+    "@types/faker": "^4.1.0",
+    "@types/knex": "0.0.44"
+  }
+}
